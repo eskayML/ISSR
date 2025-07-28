@@ -3,7 +3,7 @@ import os
 
 # === CONFIG ===
 FOLDER_URL = "https://drive.google.com/drive/folders/14psZGt00sC8J08aAPjIzzeaW4dpRhNOY"
-DEST_DIR = os.getcwd()  # current project root
+DEST_DIR = os.path.join(os.getcwd(), 'model_weights')
 
 # Download the folder
 gdown.download_folder(
